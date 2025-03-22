@@ -58,7 +58,7 @@
       a {
         color: var(--white);
         font-size: $font-size-xl;
-        transition: color 0.3s ease;
+        @include transition(color 0.3s ease);
 
         &:hover {
           color: var(--accentColor);

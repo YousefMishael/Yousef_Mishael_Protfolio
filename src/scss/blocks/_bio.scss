@@ -15,8 +15,8 @@
     align-items: center;
     text-align: center;
     opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 1s ease-out forwards;
+    @include transform(translateY(20px));
+    @include animation(fadeInUp 1s ease-out forwards);
 
     @include desktop {
       flex-direction: row;
@@ -26,8 +26,8 @@
 
     @media (prefers-reduced-motion: reduce) {
       opacity: 1;
-      transform: translateY(0);
-      animation: none;
+      @include transform(translateY(0));
+      @include animation(none);
     }
   }
 
@@ -82,7 +82,7 @@
     text-decoration: none;
     font-weight: bold;
     border-radius: $border-radius-xs;
-    transition: background-color 0.3s ease;
+    @include transition(background-color 0.3s ease);
     margin-top: $margin-xs;
 
     @include desktop {
@@ -96,13 +96,13 @@
 }
 
 // Keyframe animation for fade-in effect
-@keyframes fadeInUp {
+@include keyframes(fadeInUp) {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    @include transform(translateY(20px));
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    @include transform(translateY(0));
   }
 }

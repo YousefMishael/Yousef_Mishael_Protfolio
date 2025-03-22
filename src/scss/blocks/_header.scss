@@ -11,8 +11,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  @include transition(all 0.3s ease);
+  @include box-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
 
   &--minimized {
     padding: $padding-xxs $padding-sm;
@@ -45,7 +45,7 @@
     font-size: $font-size-lg;
     cursor: pointer;
     color: var(--white);
-    transition: color 0.3s ease;
+    @include transition(color 0.3s ease);
 
     &:hover {
       color: var(--accentColor);
@@ -58,7 +58,7 @@
     right: -100%;
     background-color: var(--secondaryColor-dark);
     height: calc(100vh - 60px);
-    transition: right 0.3s ease-in-out;
+    @include transition(right 0.3s ease-in-out);
     z-index: 1000;
     overflow-y: auto;
 
@@ -81,7 +81,7 @@
           font-weight: $font-weight-normal;
           display: block;
           padding: $padding-xs $padding-sm;
-          transition: background-color 0.3s ease, color 0.3s ease;
+          @include transition(background-color 0.3s ease, color 0.3s ease);
 
           &:hover {
             color: var(--accentColor);
@@ -108,8 +108,8 @@
       width: auto;
       height: auto;
       background-color: transparent;
-      box-shadow: none;
-      transition: none;
+      @include box-shadow(none);
+      @include transition(none);
 
       .header__menu {
         display: flex;

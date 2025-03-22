@@ -1,4 +1,5 @@
 @use "./variables" as *;
+@use "sass:list";
 
 @mixin desktop {
   @media (min-width: #{$breakpoint-xl}) {
@@ -7,8 +8,55 @@
 }
 
 @mixin transform($params...) {
-  $transform-list: join($params, null, space);
+  $transform-list: list.join($params, null, space);
   transform: $transform-list;
   -webkit-transform: $transform-list;
   -moz-transform: $transform-list;
+  -o-transform: $transform-list;
+  -ms-transform: $transform-list;
+}
+
+@mixin transition($params...) {
+  $transition-list: list.join($params, null, comma);
+  transition: $transition-list;
+  -webkit-transition: $transition-list;
+  -moz-transition: $transition-list;
+  -o-transition: $transition-list;
+  -ms-transition: $transition-list;
+}
+
+@mixin animation($params...) {
+  $animation-list: list.join($params, null, comma);
+  animation: $animation-list;
+  -webkit-animation: $animation-list;
+  -moz-animation: $animation-list;
+  -o-animation: $animation-list;
+  -ms-animation: $animation-list;
+}
+
+@mixin box-shadow($params...) {
+  $box-shadow-list: list.join($params, null, space);
+  box-shadow: $box-shadow-list;
+  -webkit-box-shadow: $box-shadow-list;
+  -moz-box-shadow: $box-shadow-list;
+  -o-box-shadow: $box-shadow-list;
+  -ms-box-shadow: $box-shadow-list;
+}
+
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @-o-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  }
 }

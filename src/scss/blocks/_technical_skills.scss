@@ -1,4 +1,5 @@
 @use "../utils/variables" as *;
+@use "../utils/mixins" as *;
 
 .skills {
   background-color: var(--primaryColor);
@@ -17,7 +18,7 @@
       background-color: var(--secondaryColor);
       padding: $padding-sm;
       border-radius: $border-radius-sm;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      @include box-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
     }
   }
 }

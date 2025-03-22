@@ -1,4 +1,5 @@
 @use "../utils/variables" as *;
+@use "../utils/mixins" as *;
 
 .languages {
   background-color: var(--secondaryColor);
@@ -17,7 +18,7 @@
       background-color: var(--primaryColor);
       padding: $padding-sm-md $padding-md-sm;
       border-radius: $border-radius-lg;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      @include box-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
     }
   }
 }
