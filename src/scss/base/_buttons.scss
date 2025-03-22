@@ -1,0 +1,6 @@
+@use "../utils/variables" as *;
+
+button:focus {
+  outline: 2px solid var(--accentColor);
+  outline-offset: 2px;
+}

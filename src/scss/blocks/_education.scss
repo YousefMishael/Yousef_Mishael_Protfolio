@@ -1,0 +1,32 @@
+@use "../utils/variables.scss" as *;
+
+.education {
+  background-color: var(--secondaryColor);
+  color: var(--white);
+  border-radius: $border-radius-sm;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: $gap-1;
+  }
+
+  &__item {
+    padding: $padding-md-sm;
+    background-color: var(--primaryColor);
+    border-radius: $border-radius-sm;
+  }
+
+  &__institution {
+    font-size: $font-size-lg;
+    font-weight: $font-weight-bold;
+  }
+
+  &__location,
+  &__degree,
+  &__date {
+    font-size: $font-size-sm;
+    color: var(--accentColor);
+  }
+}

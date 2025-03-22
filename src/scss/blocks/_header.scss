@@ -1,0 +1,133 @@
+@use "../utils/variables" as *;
+@use "../utils/mixins" as *;
+@use "sass:color";
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: $padding-xs $padding-sm;
+  background-color: var(--secondaryColor);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  &--minimized {
+    padding: $padding-xxs $padding-sm;
+    background-color: var(--secondaryColor-dark);
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+
+    &__symbol {
+      font-size: $font-size-xxl;
+      color: var(--accentColor);
+      font-weight: $font-weight-bold;
+    }
+
+    &__text {
+      font-size: $font-size-xl;
+      font-weight: $font-weight-bold;
+      margin-inline-start: $margin-xs;
+      color: var(--white);
+    }
+  }
+
+  &__nav_container {
+    position: relative;
+  }
+
+  &__mobile_menu {
+    font-size: $font-size-lg;
+    cursor: pointer;
+    color: var(--white);
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: var(--accentColor);
+    }
+  }
+
+  &__nav {
+    position: fixed;
+    top: 60px;
+    right: -100%;
+    background-color: var(--secondaryColor-dark);
+    height: calc(100vh - 60px);
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+    overflow-y: auto;
+
+    &--active {
+      right: 0;
+    }
+
+    .header__menu {
+      list-style: none;
+      padding: $padding-sm;
+      margin: 0;
+
+      li {
+        margin-bottom: $margin-sm;
+
+        a {
+          text-decoration: none;
+          color: var(--white);
+          font-size: $font-size-md;
+          font-weight: $font-weight-normal;
+          display: block;
+          padding: $padding-xs $padding-sm;
+          transition: background-color 0.3s ease, color 0.3s ease;
+
+          &:hover {
+            color: var(--accentColor);
+            background-color: rgba(255, 255, 255, 0.1);
+          }
+        }
+      }
+    }
+  }
+}
+
+// Desktop Styles
+@include desktop {
+  .header {
+    padding: $padding-sm $padding-md;
+
+    &--minimized {
+      padding: $padding-xs $padding-md;
+    }
+
+    &__nav {
+      position: static;
+      right: auto;
+      width: auto;
+      height: auto;
+      background-color: transparent;
+      box-shadow: none;
+      transition: none;
+
+      .header__menu {
+        display: flex;
+        gap: $gap-1;
+        padding: 0;
+
+        li {
+          margin-bottom: 0;
+
+          a {
+            padding: $padding-xs $padding-sm;
+          }
+        }
+      }
+    }
+
+    &__mobile_menu {
+      display: none;
+    }
+  }
+}

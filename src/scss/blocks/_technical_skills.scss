@@ -1,0 +1,23 @@
+@use "../utils/variables" as *;
+
+.skills {
+  background-color: var(--primaryColor);
+  color: var(--white);
+  border-radius: $border-radius-sm;
+  padding: $padding-md;
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: $gap-1;
+    list-style: none;
+    padding: 0;
+
+    li {
+      background-color: var(--secondaryColor);
+      padding: $padding-sm;
+      border-radius: $border-radius-sm;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@use "../utils/variables" as *;
+
+.programming-languages {
+  background-color: var(--primaryColor);
+  color: var(--white);
+  border-radius: $border-radius-sm;
+  padding: $padding-md;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $gap-1;
+    list-style: none;
+    padding: 0;
+
+    li {
+      background-color: var(--secondaryColor);
+      padding: $padding-sm-md $padding-md-sm;
+      border-radius: $border-radius-lg;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+  }
+}

@@ -1,0 +1,66 @@
+// colors
+:root {
+  --primaryColor: #ffffff;
+  --secondaryColor: #f5f5f5;
+  --accentColor: #0078d4;
+  --white: #000000;
+  --accentColor-dark: #005a9e;
+  --accentColor-light: #3399ff;
+  --secondaryColor-dark: #e0e0e0;
+  --white-dark: #d9d9d9;
+
+  @media (prefers-color-scheme: dark) {
+    --primaryColor: #1f2121;
+    --secondaryColor: #2d2d2d;
+    --accentColor: #cacaca;
+    --white: #ffffff;
+    --accentColor-dark: #a0a0a0;
+    --accentColor-light: #e0e0e0;
+    --secondaryColor-dark: #464646;
+    --white-dark: #a6a6a6;
+  }
+}
+
+// font sizing
+$font-size-sm: 0.8rem;
+$font-size-md: 1rem;
+$font-size-lg: 1.2rem;
+$font-size-xl: 1.6rem;
+$font-size-xxl: 2rem;
+$font-size-xxxl: 2.5rem;
+
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+// device breakpoints
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1124px;
+
+// margins, paddings & gaps
+$gap-1: 1em;
+$gap-1-5: 1.5em;
+$gap-2: 2em;
+$gap-3: 3em;
+
+$padding-xxs: 0.25em;
+$padding-xs: 0.5em;
+$padding-sm-md: 0.75em;
+$padding-sm: 1em;
+$padding-md-sm: 1.5em;
+$padding-md: 2em;
+$padding-lg: 3em;
+$padding-xl: 4em;
+
+$margin-xs: 0.5em;
+$margin-sm: 1em;
+$margin-md-sm: 1.5em;
+$margin-md: 2em;
+$margin-lg: 3em;
+$margin-xl: 4em;
+
+// borders
+$border-radius-xs: 5px;
+$border-radius-sm: 8px;
+$border-radius-lg: 20px;

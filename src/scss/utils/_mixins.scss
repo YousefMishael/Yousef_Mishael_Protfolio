@@ -1,0 +1,14 @@
+@use "./variables" as *;
+
+@mixin desktop {
+  @media (min-width: #{$breakpoint-xl}) {
+    @content;
+  }
+}
+
+@mixin transform($params...) {
+  $transform-list: join($params, null, space);
+  transform: $transform-list;
+  -webkit-transform: $transform-list;
+  -moz-transform: $transform-list;
+}

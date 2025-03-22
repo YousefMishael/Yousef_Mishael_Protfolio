@@ -1,0 +1,24 @@
+@use "../utils/variables" as *;
+@use "sass:color";
+
+h2 {
+  margin-bottom: $margin-md-sm;
+  text-align: center;
+  font-size: min($font-size-xxl, $font-size-xxxl);
+  font-weight: $font-weight-bold;
+  color: var(--primaryColor);
+  background: linear-gradient(
+    90deg,
+    var(--accentColor),
+    var(--accentColor-dark) // Use the darker version of the accent color
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h3 {
+  font-size: $font-size-lg;
+  font-weight: $font-weight-bold;
+  margin-bottom: 0.5rem;
+}

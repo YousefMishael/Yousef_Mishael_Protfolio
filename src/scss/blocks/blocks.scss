@@ -1,0 +1,13 @@
+@use "../base/base";
+@use "header";
+@use "./bio";
+@use "./experience";
+@use "./education";
+@use "./technical_skills";
+@use "./soft_skills";
+@use "./references";
+@use "./certificates";
+@use "./_languages";
+@use "./_programming_languages";
+@use "./footer";
+@use "../utils/_variables" as *;
