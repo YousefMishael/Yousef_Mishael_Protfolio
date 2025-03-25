@@ -1,5 +1,36 @@
+@use "../utils/mixins" as *;
+
 section {
   padding: calc(2rem + 1vw);
   margin-bottom: 3rem;
   scroll-snap-align: start;
+
+  //parent is a tag selector and adding &__item doesn't work to generate a class selector
+  .section__item {
+    opacity: 0;
+    @include transform(translateX(-50px));
+    @include transition(opacity 0.3s ease-out, transform 0.3s ease-out);
+
+    @media (prefers-reduced-motion: reduce) {
+      opacity: 1;
+      @include transform(translateX(0));
+      @include animation(none);
+    }
+
+    &.in-view {
+      opacity: 1;
+      @include transform(translateX(0));
+    }
+  }
 }
+
+// @include keyframes(fadeInLeft) {
+//   from {
+//     opacity: 0;
+//     @include transform(translateX(-50px));
+//   }
+//   to {
+//     opacity: 1;
+//     @include transform(translateX(0));
+//   }
+// }

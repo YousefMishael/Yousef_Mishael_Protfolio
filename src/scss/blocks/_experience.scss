@@ -4,15 +4,6 @@
 .experience {
   padding: $padding-xl $padding-md;
   background-color: var(--secondaryColor);
-  opacity: 0;
-  @include transform(translateY(20px));
-  @include animation(fadeInUp 1s ease-out forwards);
-
-  @media (prefers-reduced-motion: reduce) {
-    opacity: 1;
-    @include transform(translateY(0));
-    @include animation(none);
-  }
 
   &__container {
     display: flex;
@@ -29,20 +20,6 @@
     padding: $padding-md;
     border-radius: $border-radius-sm;
     @include box-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
-    opacity: 0;
-    @include transform(translateX(-50px));
-    @include transition(opacity 0.3s ease-out, transform 0.3s ease-out);
-
-    @media (prefers-reduced-motion: reduce) {
-      opacity: 1;
-      @include transform(translateX(0));
-      @include animation(none);
-    }
-
-    &.in-view {
-      opacity: 1;
-      @include transform(translateX(0));
-    }
 
     &:hover {
       @include transform(translateY(-5px));
@@ -75,27 +52,5 @@
       margin-bottom: $margin-sm;
       line-height: 1.5;
     }
-  }
-}
-
-@include keyframes(fadeInUp) {
-  from {
-    opacity: 0;
-    @include transform(translateY(20px));
-  }
-  to {
-    opacity: 1;
-    @include transform(translateY(0));
-  }
-}
-
-@include keyframes(fadeInLeft) {
-  from {
-    opacity: 0;
-    @include transform(translateX(-50px));
-  }
-  to {
-    opacity: 1;
-    @include transform(translateX(0));
   }
 }

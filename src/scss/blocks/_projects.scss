@@ -1,0 +1,89 @@
+@use "../utils/variables" as *;
+
+.projects {
+  padding: $padding-xl $padding-md;
+  background-color: var(--secondaryColor);
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: $gap-2;
+    margin-top: $margin-md;
+  }
+
+  .project {
+    background-color: var(--primaryColor);
+    padding: $padding-md;
+    border-radius: $border-radius-sm;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    anchor-name: --project-anchor;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    &__image_container {
+      position: relative;
+      overflow: hidden;
+      border-radius: $border-radius-sm;
+      margin-bottom: $margin-md;
+
+      img {
+        width: 100%;
+        height: 15rem;
+        object-fit: contain;
+        display: block;
+        transition: transform 0.3s ease;
+      }
+    }
+
+    &__title {
+      font-size: $font-size-lg;
+      margin-bottom: $margin-sm;
+      color: var(--accentColor);
+    }
+
+    &__description {
+      font-size: $font-size-md;
+      color: var(--textColor);
+      margin-bottom: $margin-md;
+    }
+
+    &__link {
+      display: inline-flex;
+      align-items: center;
+      pointer-events: none;
+      gap: $gap-1;
+      text-decoration: none;
+      color: var(--accentColor);
+      font-weight: $font-weight-bold;
+      transition: color 0.3s ease;
+      position: absolute;
+      bottom: $padding-md;
+      right: $padding-md;
+      top: anchor(--project-anchor top);
+      left: anchor(--project-anchor left);
+
+      &:hover {
+        color: var(--accentColor-dark);
+      }
+
+      i {
+        font-size: $font-size-sm;
+      }
+    }
+  }
+}
+
+#project-anchor {
+  anchor-name: --project-anchor;
+}
+
+.project__link {
+  position: absolute;
+  top: anchor(--project-anchor top);
+  left: anchor(--project-anchor left);
+}
