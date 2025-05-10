@@ -1,0 +1,132 @@
+[
+  {
+    "company": "Jawwal Palestine Telecommunications",
+    "location": "Palestine - Ramallah",
+    "role": "Siebel <abbr title=\"Customer Relationship Management\">CRM</abbr> Developer",
+    "dates": "07/2023 - Present",
+    "highlights": [
+      "Led the enhancement of existing <abbr title=\"Customer Relationship Management\">CRM</abbr> workflows and automation processes, improving efficiency and reducing manual tasks by over 20%.",
+      "Promoted within 12 months due to strong performance and organizational impact (one year ahead of schedule).",
+      "Developed strategic insights across 5 product teams, including revenue, marketing, and operations departments."
+    ],
+    "details": [
+      "Implemented Siebel eScript solutions for complex business rules in customer lifecycle management",
+      "Designed PL/SQL packages to optimize data processing in high-volume transaction systems",
+      "Integrated Siebel with middleware systems using SOAP/REST web services",
+      "Mentored junior developers in Siebel best practices and debugging techniques",
+      "Reduced batch job processing time by 35% through query optimization"
+    ],
+    "buttonText": "View Technical Details"
+  },
+  {
+    "company": "Freelance",
+    "location": "Remote",
+    "role": "Full-Stack Developer",
+    "dates": "01/2022 - Present",
+    "highlights": [
+      "Developed and deployed full-stack web applications using <strong>React JS</strong> for the frontend and <strong>Java Spring Boot</strong> for the backend.",
+      "Designed and implemented <strong>RESTful APIs</strong> to enable seamless communication between the frontend and backend systems.",
+      "Collaborated with clients to gather requirements, deliver customized solutions, and ensure project success.",
+      "Optimized application performance and scalability, ensuring a smooth user experience across devices.",
+      "Integrated third-party services and APIs to enhance application functionality and user engagement."
+    ],
+    "details": [
+      "E-commerce platform with React/Redux frontend processing $50k+ monthly transactions",
+      "Healthcare management system with Java Spring Boot backend handling HIPAA-compliant data",
+      "Real-time analytics dashboard using WebSocket connections for live data visualization",
+      "Mobile companion app built with React Native for cross-platform delivery",
+      "Implemented JWT authentication with role-based access control for admin portals"
+    ],
+    "buttonText": "View Project Examples"
+  },
+  {
+    "company": "Quartz Technologies",
+    "location": "Palestine - Nablus",
+    "role": "Frontend Developer",
+    "dates": "03/2023 - 06/2024",
+    "highlights": [
+      "Developed and implemented business requirements using <strong>Angular</strong>, focusing on creating dynamic, responsive, and user-friendly interfaces.",
+      "Collaborated with backend teams to integrate APIs and ensure seamless data flow, enhancing overall application performance."
+    ],
+    "details": [
+      "Built dynamic forms with complex validation using Angular Reactive Forms",
+      "Implemented NgRx state management for large-scale data applications",
+      "Created reusable component library with Storybook documentation",
+      "Optimized bundle size through code splitting and tree shaking",
+      "Integrated Angular Universal for server-side rendering (SSR)"
+    ],
+    "buttonText": "View Angular Work"
+  },
+  {
+    "company": "Palestinian Telecommunication Company - Paltel",
+    "location": "Palestine - Nablus",
+    "role": "Siebel <abbr title=\"Customer Relationship Management\">CRM</abbr> Developer",
+    "dates": "01/2022 - 03/2023",
+    "highlights": [
+      "Developed and customized business processes by leveraging <strong>Siebel eScript</strong> and <strong>PL/SQL</strong> to optimize functionality and meet evolving business needs.",
+      "Designed and implemented <strong>Inbound/Outbound Web Services</strong> in <strong>Siebel</strong> <abbr title=\"Customer Relationship Management\">CRM</abbr> to streamline integration and communication with Middleware systems.",
+      "Collaborated with cross-functional teams to gather requirements and deliver <abbr title=\"Customer Relationship Management\">CRM</abbr> enhancements that improved customer experience and business performance."
+    ],
+    "details": [
+      "Automated customer onboarding workflow reducing processing time from 2 days to 2 hours",
+      "Developed integration with billing system handling 500k+ monthly transactions",
+      "Created data migration scripts for Siebel upgrade with 100% data integrity",
+      "Implemented error logging framework reducing troubleshooting time by 60%",
+      "Optimized Siebel views and applets for 25% faster load times"
+    ],
+    "buttonText": "View CRM Solutions"
+  },
+  {
+    "company": "Gazza SkyGeeks",
+    "location": "Palestine - Nablus",
+    "role": "Frontend Developer Trainee (React JS)",
+    "dates": "09/2022 - 01/2023",
+    "highlights": [
+      "Developed a fully functional e-commerce website using <strong>React JS</strong>, applying best practices in frontend design and development.",
+      "Integrated a fake eStore API to simulate product listings and transactions, enhancing the project's functionality and user interaction.",
+      "Strengthened expertise in <strong>SASS</strong> to improve styling efficiency and project scalability.",
+      "Delivered a comprehensive final project utilizing <strong>Context API, Hooks, and Redux</strong>, showcasing advanced state management techniques in React."
+    ],
+    "details": [],
+    "buttonText": ""
+  },
+  {
+    "company": "Freelance",
+    "location": "Turkey - Istanbul",
+    "role": "Frontend Developer Trainee (React JS)",
+    "dates": "07/2021 - 08/2021",
+    "highlights": [
+      "Transformed static web designs from images into a fully functional React.js project, ensuring responsiveness and user-friendly interface.",
+      "Integrated the frontend with a <strong>RESTful API</strong>, enabling seamless communication between the web application and backend systems.",
+      "Applied efficient coding practices to deliver a high-quality, production-ready website within a tight timeline."
+    ],
+    "details": [],
+    "buttonText": ""
+  },
+  {
+    "company": "Freelance",
+    "location": "Turkey - Istanbul",
+    "role": "Mobile App Developer",
+    "dates": "04/2021 - 06/2021",
+    "highlights": [
+      "Developed a cross-platform e-commerce mobile app using <strong>React Native</strong>, replicating features from the previously built website for a seamless mobile user experience.",
+      "Integrated the app with backend systems via <strong>RESTful APIs</strong>, ensuring real-time data synchronization and smooth communication between the frontend and backend.",
+      "Focused on performance optimization and responsive design to deliver a fast, intuitive, and scalable mobile solution."
+    ],
+    "details": [],
+    "buttonText": ""
+  },
+  {
+    "company": "Freelance",
+    "location": "Turkey - Istanbul",
+    "role": "Frontend Developer",
+    "dates": "01/2021 - 04/2021",
+    "highlights": [
+      "Built a fully responsive e-commerce website using <strong>HTML5, CSS3, and React.js</strong>, delivering a modern and engaging user interface.",
+      "Integrated the frontend with the backend through <strong>RESTful APIs</strong>, enabling efficient data flow and dynamic content updates.",
+      "Ensured cross-browser compatibility and optimized the site for performance, contributing to an enhanced user experience and smoother operations."
+    ],
+    "details": [],
+    "buttonText": ""
+  }
+]

@@ -11,6 +11,9 @@
       rel="stylesheet"
     />
 
+    <!-- Add this before the closing </body> tag -->
+    <script src="./js/main.js"></script>
+
     <!-- Fontawesome Icons -->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -129,8 +132,60 @@
     <!--------------------- EXPERIENCE SECTION ------------------------>
     <section id="experience" class="experience">
       <h2 title="Professional Experience">Professional Experience</h2>
-      <div class="experience__container">
-        <div class="experience__item section__item">
+      <div class="experience__container" id="experienceContainer">
+        <div class="experience__skeleton section__item">
+          <div class="skeleton skeleton-title" style="width: 70%"></div>
+          <div class="skeleton skeleton-subtitle" style="width: 50%"></div>
+          <div class="skeleton skeleton-subtitle" style="width: 60%"></div>
+          <ul>
+            <li>
+              <div class="skeleton skeleton-text" style="width: 90%"></div>
+            </li>
+            <li>
+              <div class="skeleton skeleton-text" style="width: 80%"></div>
+            </li>
+            <li>
+              <div class="skeleton skeleton-text" style="width: 85%"></div>
+            </li>
+          </ul>
+          <div class="skeleton skeleton-button" style="width: 30%"></div>
+        </div>
+        <div class="experience__skeleton section__item">
+          <div class="skeleton skeleton-title" style="width: 70%"></div>
+          <div class="skeleton skeleton-subtitle" style="width: 50%"></div>
+          <div class="skeleton skeleton-subtitle" style="width: 60%"></div>
+          <ul>
+            <li>
+              <div class="skeleton skeleton-text" style="width: 90%"></div>
+            </li>
+            <li>
+              <div class="skeleton skeleton-text" style="width: 80%"></div>
+            </li>
+            <li>
+              <div class="skeleton skeleton-text" style="width: 85%"></div>
+            </li>
+          </ul>
+          <div class="skeleton skeleton-button" style="width: 30%"></div>
+        </div>
+        <div class="experience__skeleton section__item">
+          <div class="skeleton skeleton-title" style="width: 70%"></div>
+          <div class="skeleton skeleton-subtitle" style="width: 50%"></div>
+          <div class="skeleton skeleton-subtitle" style="width: 60%"></div>
+          <ul>
+            <li>
+              <div class="skeleton skeleton-text" style="width: 90%"></div>
+            </li>
+            <li>
+              <div class="skeleton skeleton-text" style="width: 80%"></div>
+            </li>
+            <li>
+              <div class="skeleton skeleton-text" style="width: 85%"></div>
+            </li>
+          </ul>
+          <div class="skeleton skeleton-button" style="width: 30%"></div>
+        </div>
+
+        <!-- <div class="experience__item section__item">
           <h3>Jawwal Palestine Telecommunications</h3>
           <p class="experience__location">Palestine - Ramallah</p>
           <p class="experience__role">
@@ -157,9 +212,37 @@
               revenue, marketing, and operations departments.
             </li>
           </ul>
+
+          <button class="experience__more-btn">
+            View Technical Details <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="experience__additional-details">
+            <ul>
+              <li>
+                Implemented Siebel eScript solutions for complex business rules
+                in customer lifecycle management
+              </li>
+              <li>
+                Designed PL/SQL packages to optimize data processing in
+                high-volume transaction systems
+              </li>
+              <li>
+                Integrated Siebel with middleware systems using SOAP/REST web
+                services
+              </li>
+              <li>
+                Mentored junior developers in Siebel best practices and
+                debugging techniques
+              </li>
+              <li>
+                Reduced batch job processing time by 35% through query
+                optimization
+              </li>
+            </ul>
+          </div>
         </div>
 
-        <div class="experience__item section__item">
+         <div class="experience__item section__item">
           <h3>Freelance</h3>
           <p class="experience__location">Remote</p>
           <p class="experience__role">
@@ -191,6 +274,38 @@
               functionality and user engagement.
             </li>
           </ul>
+
+          <button
+            class="experience__more-btn"
+            aria-expanded="false"
+            aria-controls="freelance-details"
+          >
+            View Project Examples <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="experience__additional-details" id="freelance-details">
+            <ul>
+              <li>
+                E-commerce platform with React/Redux frontend processing $50k+
+                monthly transactions
+              </li>
+              <li>
+                Healthcare management system with Java Spring Boot backend
+                handling HIPAA-compliant data
+              </li>
+              <li>
+                Real-time analytics dashboard using WebSocket connections for
+                live data visualization
+              </li>
+              <li>
+                Mobile companion app built with React Native for cross-platform
+                delivery
+              </li>
+              <li>
+                Implemented JWT authentication with role-based access control
+                for admin portals
+              </li>
+            </ul>
+          </div>
         </div>
 
         <div class="experience__item section__item">
@@ -214,6 +329,35 @@
               seamless data flow, enhancing overall application performance.
             </li>
           </ul>
+
+          <button
+            class="experience__more-btn"
+            aria-expanded="false"
+            aria-controls="quartz-details"
+          >
+            View Angular Work <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="experience__additional-details" id="quartz-details">
+            <ul>
+              <li>
+                Built dynamic forms with complex validation using Angular
+                Reactive Forms
+              </li>
+              <li>
+                Implemented NgRx state management for large-scale data
+                applications
+              </li>
+              <li>
+                Created reusable component library with Storybook documentation
+              </li>
+              <li>
+                Optimized bundle size through code splitting and tree shaking
+              </li>
+              <li>
+                Integrated Angular Universal for server-side rendering (SSR)
+              </li>
+            </ul>
+          </div>
         </div>
 
         <div class="experience__item section__item">
@@ -249,6 +393,37 @@
               performance.
             </li>
           </ul>
+
+          <button
+            class="experience__more-btn"
+            aria-expanded="false"
+            aria-controls="paltel-details"
+          >
+            View CRM Solutions <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="experience__additional-details" id="paltel-details">
+            <ul>
+              <li>
+                Automated customer onboarding workflow reducing processing time
+                from 2 days to 2 hours
+              </li>
+              <li>
+                Developed integration with billing system handling 500k+ monthly
+                transactions
+              </li>
+              <li>
+                Created data migration scripts for Siebel upgrade with 100% data
+                integrity
+              </li>
+              <li>
+                Implemented error logging framework reducing troubleshooting
+                time by 60%
+              </li>
+              <li>
+                Optimized Siebel views and applets for 25% faster load times
+              </li>
+            </ul>
+          </div>
         </div>
 
         <div class="experience__item section__item">
@@ -368,14 +543,14 @@
               smoother operations.
             </li>
           </ul>
-        </div>
+        </div> -->
       </div>
     </section>
 
     <!--------------------- PROJECTS SECTION ------------------------>
     <section id="projects" class="projects">
       <h2 title="Projects">Projects</h2>
-      <div class="projects__container">
+      <div class="projects__container" id="projectsContainer">
         <div class="project section__item" id="project-anchor">
           <div class="project__image_container">
             <img
@@ -649,6 +824,65 @@
         </li>
       </ul>
     </section>
+
+    <!--------------------- CONTACT FORM SECTION ------------------------>
+    <section id="contact" class="contact">
+      <h2>Get In Touch</h2>
+      <form id="contactForm" class="contact__form" novalidate>
+        <div class="form-group">
+          <label for="name">Name*</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            minlength="2"
+            maxlength="50"
+            pattern="[A-Za-z ]+"
+            title="Only letters and spaces allowed"
+          />
+          <div class="error-message" id="nameError"></div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email*</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            title="Please enter a valid email address"
+          />
+          <div class="error-message" id="emailError"></div>
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" maxlength="100" />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message* (Max 300 characters)</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            required
+            minlength="10"
+            maxlength="300"
+          ></textarea>
+          <div class="char-counter">
+            <span id="charCount">300</span> characters remaining
+          </div>
+          <div class="error-message" id="messageError"></div>
+        </div>
+
+        <button type="submit" class="contact__submit">Send Message</button>
+      </form>
+    </section>
+
+    <!--------------------- FOOTER ------------------------>
     <footer class="footer">
       <div class="footer__container">
         <div class="footer__logo">
@@ -687,61 +921,5 @@
         </p>
       </div>
     </footer>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const header = document.querySelector(".header");
-        const sectionItems = document.querySelectorAll(".section__item");
-        const mobileMenu = document.querySelector(".header__mobile_menu");
-        const navMenu = document.querySelector(".header__nav");
-        const sectionTitles = document.querySelectorAll("section h2");
-        let lastScrollY = window.scrollY;
-
-        const checkVisibility = () => {
-          // Header animation
-          if (window.scrollY > lastScrollY && window.scrollY > 50) {
-            // Scrolling down
-            header.classList.add("header--minimized");
-          } else {
-            // Scrolling up
-            header.classList.remove("header--minimized");
-          }
-          lastScrollY = window.scrollY;
-
-          // Section Titles items animation
-          sectionTitles.forEach((item) => {
-            const rect = item.getBoundingClientRect();
-            if (rect.top <= window.innerHeight * 0.75 && rect.bottom >= 0) {
-              item.classList.add("in-view");
-            }
-          });
-
-          // Experience items animation
-          sectionItems.forEach((item) => {
-            const rect = item.getBoundingClientRect();
-            if (rect.top <= window.innerHeight * 0.75 && rect.bottom >= 0) {
-              item.classList.add("in-view");
-            }
-          });
-        };
-
-        const handleMobileMenu = () => {
-          navMenu.classList.toggle("header__nav--active");
-        };
-
-        // Close mobile menu when clicking outside
-        document.addEventListener("click", (event) => {
-          if (
-            !event.target.closest(".header__nav_container") &&
-            !event.target.closest(".header__mobile_menu")
-          ) {
-            navMenu.classList.remove("header__nav--active");
-          }
-        });
-
-        window.addEventListener("scroll", checkVisibility);
-        mobileMenu.addEventListener("click", handleMobileMenu);
-      });
-    </script>
   </body>
 </html>

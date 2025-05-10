@@ -1,0 +1,67 @@
+@use "../utils/variables" as *;
+@use "../utils/mixins" as *;
+
+.contact {
+  padding: $padding-xl;
+  background-color: var(--primaryColor);
+
+  &__form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .form-group {
+    margin-bottom: $margin-md;
+
+    label {
+      display: block;
+      margin-bottom: $margin-xs;
+      font-weight: $font-weight-bold;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: $padding-sm;
+      border: 1px solid #ddd;
+      border-radius: $border-radius-sm;
+      font-family: inherit;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+  }
+
+  .error-message {
+    color: #ff4444;
+    font-size: $font-size-sm;
+    margin-top: $margin-xs;
+    display: none;
+  }
+
+  .char-counter {
+    font-size: $font-size-sm;
+    text-align: right;
+    margin-top: $margin-xs;
+
+    &.error {
+      color: #ff4444;
+    }
+  }
+
+  &__submit {
+    background-color: var(--accentColor);
+    color: white;
+    border: none;
+    padding: $padding-sm $padding-md;
+    border-radius: $border-radius-sm;
+    cursor: pointer;
+    font-size: $font-size-md;
+    @include transition(background-color 0.3s);
+
+    // &:hover {
+    //   background-color: darken($accent-color, 10%);
+    // }
+  }
+}

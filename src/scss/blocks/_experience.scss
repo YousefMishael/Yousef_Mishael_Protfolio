@@ -19,6 +19,7 @@
     background-color: var(--primaryColor);
     padding: $padding-md;
     border-radius: $border-radius-sm;
+    opacity: 1 !important;
     @include box-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
 
     &:hover {
@@ -51,6 +52,89 @@
     li {
       margin-bottom: $margin-sm;
       line-height: 1.5;
+    }
+  }
+
+  &__more-btn {
+    background-color: var(--accentColor);
+    color: white;
+    border: none;
+    padding: $padding-xs $padding-sm;
+    border-radius: $border-radius-sm;
+    cursor: pointer;
+    font-size: $font-size-sm;
+    margin-top: $margin-sm;
+    @include transition(all 0.3s ease);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    i {
+      @include transition(transform 0.3s ease);
+    }
+
+    &.active i {
+      @include transform(rotate(180deg));
+    }
+  }
+
+  &__additional-details {
+    max-height: 0;
+    overflow: hidden;
+    @include transition(max-height 0.3s ease);
+
+    ul {
+      padding-left: $margin-md-sm;
+      padding-top: $margin-sm;
+      list-style: disc;
+
+      li {
+        margin-bottom: $margin-sm;
+        line-height: 1.5;
+      }
+    }
+
+    &.show {
+      max-height: 500px;
+    }
+  }
+
+  &__skeleton {
+    background-color: var(--primaryColor);
+    padding: $padding-md;
+    border-radius: $border-radius-sm;
+    opacity: 1 !important;
+
+    .skeleton {
+      background-color: #e0e0e0;
+      border-radius: 4px;
+      margin-bottom: $margin-sm;
+      height: 1.2rem;
+      opacity: 1 !important;
+
+      &-title {
+        height: 1.8rem;
+        margin-bottom: $margin-md;
+      }
+
+      &-subtitle {
+        height: 1.4rem;
+        margin-bottom: $margin-sm;
+      }
+
+      &-button {
+        height: 2.2rem;
+        margin-top: $margin-md;
+      }
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+
+      li {
+        margin-bottom: $margin-sm;
+      }
     }
   }
 }
